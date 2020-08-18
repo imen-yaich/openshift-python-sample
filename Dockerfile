@@ -6,7 +6,6 @@ LABEL maintainer="ckretler@umich.edu"
 WORKDIR /app
 
 COPY requirements.txt .
-RUN pip3 install django
 RUN pip install -r requirements.txt
 
 COPY /src .

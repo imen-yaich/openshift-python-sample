@@ -4,7 +4,7 @@ LABEL maintainer="ckretler@umich.edu"
 #RUN apt-get update -y
 
 WORKDIR /app
-
+RUN curl https://bootstrap.pypa.io/get-pip.py | python
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
